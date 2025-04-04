@@ -1,0 +1,42 @@
+/* Custom styles for the Food, LLC website */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif; /* Set a default font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Navbar styles */
+.navbar {
+    margin-bottom: 0; /* Remove bottom margin from navbar */
+}
+
+/* Page heading styles */
+h1 {
+    margin-top: 20px; /* Add some space above the heading */
+    font-size: 2.5em; /* Increase font size for the heading */
+}
+
+/* Tall section styles */
+.container-fluid {
+    padding: 50px 15px; /* Add padding to the tall section */
+    color: #333; /* Set text color */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Dark background for footer */
+    color: white; /* White text for footer */
+    padding: 10px 0; /* Padding for footer */
+    position: relative; /* Ensures footer stays at the bottom */
+    bottom: 0;
+    width: 100%; /* Full width for footer */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Adjust heading size for smaller screens */
+    }
+}
