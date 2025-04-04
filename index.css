@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em; /* 75% larger than default */
+    margin-bottom: 20px;
+}
+
+.section {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.section-title {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f0c040; /* Example color */
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#chicken {
+    background-color: #ffcccb; /* Example color */
+}
+
+#beef {
+    background-color: #add8e6; /* Example color */
+}
+
+#sushi {
+    background-color: #90ee90; /* Example color */
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+    .section {
+        width: 32%; /* 3 sections in a row */
+        float: left;
+        margin-right: 1%; /* Spacing between sections */
+    }
+    .section:nth-child(3) {
+        margin-right: 0; /* No margin on the last section */
+    }
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 48%; /* 2 sections in the first row */
+        float: left;
+        margin-right: 2%; /* Spacing between sections */
+    }
+    .section:nth-child(2) {
+        margin-right: 0; /* No margin on the last section in the row */
+    }
+    .section:nth-child(3) {
+        width: 100%; /* 3rd section takes full width */
+        float: none; /* Clear float */
+    }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+    .section {
+        width: 100%; /* Each section takes full width */
+        float: none; /* Clear float */
+    }
+}
